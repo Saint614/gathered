@@ -14,6 +14,9 @@ interface MapStore {
   toggleFilterType: (type: string) => void
   setOpenToPublicOnly: (value: boolean) => void
   clearFilters: () => void
+
+  selectedFarmId: string | null
+  setSelectedFarmId: (id: string | null) => void
 }
 
 export const useMapStore = create<MapStore>((set) => ({
@@ -35,4 +38,7 @@ export const useMapStore = create<MapStore>((set) => ({
     })),
   setOpenToPublicOnly: (openToPublicOnly) => set({ openToPublicOnly }),
   clearFilters: () => set({ radiusKm: 50, filterTypes: [], openToPublicOnly: false }),
+
+  selectedFarmId: null,
+  setSelectedFarmId: (selectedFarmId) => set({ selectedFarmId }),
 }))
