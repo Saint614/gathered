@@ -20,9 +20,9 @@ Status key: `[ ]` not started · `[~]` in progress · `[x]` complete
 
 ### Farm Profiles
 - [ ] Farm registration form (name, address, type, description)
-- [ ] Farm owner dashboard (simple — edit profile, manage events)
+- [x] Farm owner dashboard (simple — edit profile, manage events)
 - [ ] Upload cover photo and avatar
-- [ ] Set operating hours
+- [x] Set operating hours
 - [ ] Add/edit products currently available
 - [ ] Mark farm as "open to public"
 
